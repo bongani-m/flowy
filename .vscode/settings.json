@@ -1,8 +1,0 @@
-{
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.tabSize": 2,
-  "editor.acceptSuggestionOnEnter": "off",
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": true
-}
