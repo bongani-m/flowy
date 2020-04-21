@@ -65,14 +65,6 @@ Adding Flowy to your WebApp is incredibly simple:
 3. Create a canvas element that will contain the flowchart (for example, `<div id="canvas"></div>`)
 4. Create the draggable blocks with the `.create-flowy` class (for example, `<div class="create-flowy">Grab me</div>`)
 
-### Publish NPM Module
-
-This package is published by first converting to ES5 modules in a `dist` folder. The `package.json` is copied to the `dist` folder and published from there to allow importing modules from `flowy/engine` instead of `flowy/dist/engine`.
-
-```bash
-npm run dist && npm publish dist
-```
-
 ## Running Flowy
 
 ### Demo
