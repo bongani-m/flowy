@@ -58,8 +58,8 @@ Adding Flowy to your WebApp is incredibly simple:
 2. Link `dist/flowy.js` and `dist/flowy.css` to your project -- or via CDN:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alyssaxuu/flowy/flowy.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/alyssaxuu/flowy/flowy.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alyssaxuu/flowy/dist/flowy.css" />
+<script src="https://cdn.jsdelivr.net/gh/alyssaxuu/flowy/dist/flowy.js.js"></script>
 ```
 
 3. Create a canvas element that will contain the flowchart (for example, `<div id="canvas"></div>`)
