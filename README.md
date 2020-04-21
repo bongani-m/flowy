@@ -13,6 +13,8 @@ Made by [Alyssa X](https://alyssax.com)
 
 - [Features](#features)
 - [Installation](#installation)
+  - [With NPM](#with-npm)
+  - [Without NPM](#without-npm)
 - [Running Flowy](#running-flowy)
   - [Initialization](#initialization)
   - [Example](#example)
@@ -46,20 +48,25 @@ You can suggest new features [here](https://github.com/alyssaxuu/flowy/issues)
 
 ## Installation
 
-You can install the Flowy package and use it as a module.
+Adding Flowy to your WebApp is incredibly simple. You can either install the Flowy package through npm, or simply link the js and css files into your project.
+
+
+### With NPM
 
 1. Install the package: `npm install flowy`
 2. Import the module in your project: `import flowy from "flowy"` or `const flowy = require("flowy")`
 3. Import styles into your project: `import styles from "flowy/engine/index.css"`
+4. Create a canvas element that will contain the flowchart (for example, `<div id="canvas"></div>`)
+5. Create the draggable blocks with the `.create-flowy` class (for example, `<div class="create-flowy">Grab me</div>`)
+6. Run `npm run build:web`
 
-Adding Flowy to your WebApp is incredibly simple:
+### Without NPM
 
-1. Run `npm run build:web`
-2. Link `dist/flowy.js` and `dist/flowy.css` to your project -- or via CDN:
+1. Link `dist/flowy.js` and `dist/flowy.css` to your project -- or via CDN:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alyssaxuu/flowy/dist/flowy.css" />
-<script src="https://cdn.jsdelivr.net/gh/alyssaxuu/flowy/dist/flowy.js.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alyssaxuu/flowy/dist/flowy.js"></script>
 ```
 
 3. Create a canvas element that will contain the flowchart (for example, `<div id="canvas"></div>`)
@@ -69,7 +76,7 @@ Adding Flowy to your WebApp is incredibly simple:
 
 ### Demo
 
-There's a demo in [`src/demo`](./src/demo/). You can run the demo in your browser with `npm run demo`. This will open a browser window for you (or visit http://localhost:1234/).
+There's a demo in [`src/demo`](./src/demo/). If you installed Flowy with NPM, you can run the demo in your browser with `npm run demo`. This will open a browser window for you (or visit http://localhost:1234/).
 
 If you want to build the demo without running it in your browser, run `npm run build:demo` and the source will be output to the [`demo`](./demo/) folder.
 
